@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/node": "^13.1.1",
     "rimraf": "^3.0.0",
+    "tslint": "^5.20.1",
     "typescript": "^3.7.4"
   }
 }
