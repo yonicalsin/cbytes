@@ -1,4 +1,4 @@
-import { Options } from '../src/types';
+import { Options } from '../index';
 import { toString } from './to-string';
 import { toNumber } from './to-number';
 
