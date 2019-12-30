@@ -1,12 +1,12 @@
 import { Options } from '../index';
-import { kb, mb, gb, tb, pb, eb, zb, yb, units } from './variables';
+import { kb, mb, gb, tb, pb, eb, zb, yb, units, parseThousand } from './variables';
 
 /**
  * @param a number
  * @param options { decimals, separator }
  * @Return string
  */
-export const toString = (a: number, { decimals, separator = '' }: Options = {}) => {
+export const toString = (a: number, { decimals, separator = '', everyThousand = '' }: Options = {}) => {
     let unit: string = 'B';
     let size: any = a;
 
@@ -33,5 +33,8 @@ export const toString = (a: number, { decimals, separator = '' }: Options = {}) 
     size = a / units[unit.toLowerCase()];
     // tslint:disable-next-line: no-unused-expression
     decimals !== undefined && (size = size.toFixed(decimals));
-    return `${size}${separator}${unit}`;
+    size = `${size}${separator}${unit}`;
+    // tslint:disable-next-line: no-unused-expression
+    everyThousand !== '' && (size = size.replace(parseThousand, everyThousand));
+    return size;
 };
