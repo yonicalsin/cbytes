@@ -1,6 +1,6 @@
 {
   "files": [
-    "*.ts"
+    "src/index.ts"
   ],
   "noImplicitAny": true,
   "target": "es2015",
