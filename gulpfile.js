@@ -29,7 +29,7 @@ function build() {
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('dist'));
+    // .pipe(gulp.dest('dist'));
 }
 function message(cb, msg = `
     ========================
@@ -41,7 +41,7 @@ function message(cb, msg = `
         resolve()
     })
 }
-
+gulp.task("clean", clean)
 gulp.task("default", function () {
     return gulp.watch("src/index.ts", gulp.series(message, dev))
 })
