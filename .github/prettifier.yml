@@ -1,5 +1,5 @@
-commentTemplate: ""
-commitMessage: "Format {{commitSha}}"
+commentTemplate: ''
+commitMessage: 'Format {{commitSha}}'
 debug: true
 excludeBranches: []
 excludeFiles:
