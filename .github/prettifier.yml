@@ -1,0 +1,7 @@
+commentTemplate: ""
+commitMessage: "Format {{commitSha}}"
+debug: true
+excludeBranches: []
+excludeFiles:
+  - node_modules
+pullsOnly: false
