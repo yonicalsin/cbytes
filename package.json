@@ -46,7 +46,7 @@
     "gulp-uglify": "^3.0.2",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
-    "tslint": "^5.20.1",
+    "tslint": "^6.0.0",
     "typescript": "^3.7.4",
     "vinyl-buffer": "^1.0.1"
   },
@@ -64,7 +64,7 @@
     "ts-jest": "24.3.0",
     "tslint": "6.0.0",
     "ts-jest": "25.2.1",
-    "tslint": "5.20.1",
+    "tslint": "6.0.0",
     "typescript": "3.8.2",
     "vinyl-buffer": "1.0.1"
   }
