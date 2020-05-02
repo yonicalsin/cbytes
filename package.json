@@ -59,7 +59,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-typescript": "6.0.0-alpha.1",
     "gulp-uglify": "3.0.2",
-    "jest": "25.1.0",
+    "jest": "25.5.4",
     "ts-jest": "24.3.0",
     "tslint": "6.0.0",
     "ts-jest": "25.2.1",
